@@ -35,7 +35,7 @@ class App extends React.Component {
       },
       {
         id: 4,
-        title: 'Best application for working with servers',
+        title: 'Best application for servers',
         img: 'con4.webp',
         desc: 'IT competition',
         category: 'it-competition',

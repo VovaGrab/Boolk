@@ -63,10 +63,30 @@ header .favorite {
   top: 50px;
   right: 100px;
   width: 450px;
-  min-height: 100px;
-  background: linear-gradient(30deg, #00ffcc, #009dff);
+  background: linear-gradient(200deg, #00ffcc, #009dff);
   box-shadow: -10px 5px 10px rgb(212, 212, 212);
   z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .favorite .item {
+  width: 100%;
+}
+
+header .favorite .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .favorite .item h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .favorite .item b{
+  color: white;
 }
 
 header .presentation{
