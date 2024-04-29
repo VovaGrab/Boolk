@@ -3,10 +3,13 @@ import { GoHeartFill } from "react-icons/go";
 import Favorite from './Favorite';
 
 const showFavorites = (props) => {
+  let summa = 0
+  props.favorites.forEach(el => summa += Number. parseFloat(el.prize))
   return (<div>
       {props.favorites.map(el => (
-        <Favorite key={el.id} item={el} />
+        <Favorite onDelete={props.onDelete} key={el.id} item={el} />
       ))}
+      <p className='summa'>Total amount if you win all competitions: {new Intl.NumberFormat().format(summa)}$</p>
     </div>)
 }
 

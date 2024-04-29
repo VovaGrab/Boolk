@@ -60,15 +60,20 @@ class App extends React.Component {
       ]
     }
     this.addToFavorite = this.addToFavorite.bind(this)
+    this.deleteFavorite = this.deleteFavorite.bind(this)
   }
   render() {
     return (
     <div className="wrapper">
-      <Header favorites={this.state.favorites} />
+      <Header favorites={this.state.favorites} onDelete={this.deleteFavorite} />
       <Items competitions={this.state.competitions} onAdd={this.addToFavorite} />
       <Footer />
     </div>
     )
+  }
+
+  deleteFavorite(id) {
+    this.setState({favorites: this.state.favorites.filter(el => el.id !== id)})
   }
 
   addToFavorite(item) {

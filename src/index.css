@@ -89,6 +89,31 @@ header .favorite .item b{
   color: white;
 }
 
+header .favorite .item .delete-icon {
+  color: black;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: opacity 700ms ease;
+}
+
+header .favorite .item .delete-icon:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.5);
+  opacity: 0.7;
+  transition: opacity 0.5s ease, transform 0.5s ease, color 0.5s ease;
+}
+
+header .favorite .summa {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+
 header .presentation{
   margin: 50px 0;
   background: url('./img/bg.gif') no-repeat;
